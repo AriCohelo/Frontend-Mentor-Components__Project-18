@@ -5,5 +5,11 @@
 body {
 	font-size: 16px;
 	font-family: $Ff-primary;
-	background-color: rgb(255, 221, 0);
+	background-color: $Clr-primary-Red;
+	background-image: url('./images/bg-intro-desktop.png');
+	font-family: $Ff-primary;
+}
+.signUpForm {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 }
