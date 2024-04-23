@@ -8,7 +8,7 @@ body {
 	background-color: $Clr-primary-Red;
 	background-image: url('./images/bg-intro-desktop.png');
 	font-family: $Ff-primary;
-	padding: 8rem 9.5rem 8rem 9.5rem;
+	padding: 8rem 10rem 8rem 10rem;
 }
 .signUpForm {
 	display: grid;
@@ -26,6 +26,7 @@ body {
 		font-size: 3.0625rem;
 		font-weight: $Fw-bold;
 		line-height: 115%;
+		align-self: flex-end;
 	}
 	&__description {
 		width: 32.125rem;
@@ -33,6 +34,7 @@ body {
 		font-size: 1rem;
 		font-weight: $Fw-medium;
 		line-height: 160%;
+		margin-top: 1.7rem;
 	}
 	&__buttonTry {
 		background-color: $Clr-accent-Blue;
@@ -62,6 +64,8 @@ body {
 			border: 1px solid $Clr-neutral-Grayish-Blue;
 			padding-left: 2rem;
 		}
+		&-firstName {
+		}
 	}
 	&__claim {
 		color: #fff;
@@ -84,5 +88,13 @@ body {
 			text-decoration: none;
 			color: $Clr-primary-Red;
 		}
+	}
+}
+@media (max-width: 900px) {
+	body {
+		padding: 5.75rem 1.5rem 5.75rem 1.5rem;
+	}
+	.signUpForm {
+		grid-template-columns: 1fr;
 	}
 }

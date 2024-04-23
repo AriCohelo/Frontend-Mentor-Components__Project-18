@@ -29,23 +29,42 @@
 					>
 					then $20/mo. thereafter
 				</button>
-				<form class="signUpForm__form">
+				<form name="myForm" class="signUpForm__form" novalidate>
+					<label for="firstName" style="display: none">First Name</label>
 					<input
+						required
 						type="text"
+						name="firstName"
+						id="firstName"
 						placeholder="First Name"
+						pattern="[A-Za-z]+"
 						class="signUpForm__form-firstName"
 					/>
+					<label for="lastName" style="display: none">Last Name</label>
 					<input
+						required
 						type="text"
+						name="lastName"
+						id="lastName"
 						placeholder="Last Name"
+						pattern="[A-Za-z]+"
 						class="signUpForm__form-lastName"
 					/>
+					<label for="email" style="display: none">Email Address</label>
 					<input
-						type="text"
+						required
+						type="email"
+						name="email"
+						id="email"
 						placeholder="Email Address"
 						class="signUpForm__form-email"
+						autocomplete="email"
 					/>
+					<label for="password" style="display: none">Password</label>
 					<input
+						required
+						name="password"
+						id="password"
 						type="text"
 						placeholder="Password"
 						class="signUpForm__form-password"
