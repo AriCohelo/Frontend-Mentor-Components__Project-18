@@ -27,7 +27,7 @@
 					<span class="signUpForm__buttonTry-highlight"
 						>Try it free 7 days</span
 					>
-					then $20/mo. thereafter
+					<span>then $20/mo. thereafter</span>
 				</button>
 				<form name="myForm" class="signUpForm__form" novalidate>
 					<label for="firstName" style="display: none">First Name</label>
@@ -80,15 +80,35 @@
 						class="signUpForm__form-email"
 						autocomplete="email"
 					/>
+					<input
+						required
+						type="email"
+						name="emailError"
+						id="emailError"
+						placeholder="Email Address"
+						class="signUpForm__form-emailError hidden"
+					/>
+					<p class="hidden errorMessage">Last Name cannot be empty</p>
 					<label for="password" style="display: none">Password</label>
 					<input
 						required
 						name="password"
 						id="password"
-						type="text"
+						type="password"
 						placeholder="Password"
 						class="signUpForm__form-password"
+						minlength="8"
 					/>
+					<input
+						required
+						name="passwordError"
+						id="passwordError"
+						type="password"
+						placeholder="Password"
+						class="hidden signUpForm__form-passwordError"
+						minlength="8"
+					/>
+					<p class="hidden errorMessage">Password cannot be empty</p>
 					<button class="signUpForm__claim">CLAIM YOUR FREE TRIAL</button>
 					<p class="signUpForm__terms">
 						By clicking the button, you are agreeing to our
