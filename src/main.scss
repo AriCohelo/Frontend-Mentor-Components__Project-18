@@ -53,23 +53,37 @@ body {
 	&__form {
 		display: grid;
 		grid-template-columns: 1fr;
-		gap: 1.25rem;
 		padding: 2.5rem;
 		border-radius: 0.625rem;
 		background: #fff;
 		box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
-		& input {
+		&-lastName,
+		&-email,
+		&-password {
+			margin-top: 1.25rem;
+		}
+		&-firstName,
+		&-lastName,
+		&-email,
+		&-password,
+		&-firstNameError,
+		&-lastNameError {
 			height: 3.5rem;
 			border-radius: 0.25rem;
 			border: 1px solid $Clr-neutral-Grayish-Blue;
 			padding-left: 2rem;
 		}
-		&-firstName {
+		&-firstNameError,
+		&-lastNameError {
+			border: 2px solid $Clr-primary-Red;
+			background-image: url(./images/icon-error.svg);
+			background-repeat: no-repeat;
+			background-position: calc(100% - 1.5rem);
 		}
 	}
 	&__claim {
 		color: #fff;
-
+		margin-top: 1.25rem;
 		font-size: 1rem;
 		border: none;
 		height: 3.5rem;
@@ -97,4 +111,15 @@ body {
 	.signUpForm {
 		grid-template-columns: 1fr;
 	}
+}
+.hidden {
+	display: none;
+}
+.errorMessage {
+	color: $Clr-primary-Red;
+	font-size: 0.6875rem;
+	font-style: italic;
+	font-weight: $Fw-medium;
+	text-align: right;
+	margin-top: 0.5rem;
 }

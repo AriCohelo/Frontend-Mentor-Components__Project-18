@@ -40,7 +40,17 @@
 						pattern="[A-Za-z]+"
 						class="signUpForm__form-firstName"
 					/>
-					<label for="lastName" style="display: none">Last Name</label>
+					<input
+						required
+						type="text"
+						name="firstNameError"
+						id="firstNameError"
+						placeholder="First Name"
+						pattern="[A-Za-z]+"
+						class="signUpForm__form-firstNameError hidden"
+					/>
+					<p class="hidden errorMessage">First Name cannot be empty</p>
+					<label for="lastName" style="display: none">First Name</label>
 					<input
 						required
 						type="text"
@@ -50,6 +60,16 @@
 						pattern="[A-Za-z]+"
 						class="signUpForm__form-lastName"
 					/>
+					<input
+						required
+						type="text"
+						name="lastNameError"
+						id="lastNameError"
+						placeholder="Last Name"
+						pattern="[A-Za-z]+"
+						class="signUpForm__form-lastNameError hidden"
+					/>
+					<p class="hidden errorMessage">Last Name cannot be empty</p>
 					<label for="email" style="display: none">Email Address</label>
 					<input
 						required
